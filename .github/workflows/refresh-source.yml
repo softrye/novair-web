@@ -1,0 +1,34 @@
+name: Refresh NOVAIR source
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "NOVAIR_GH_SOURCE_HIGHER.zip"
+      - ".github/workflows/refresh-source.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Expand source
+        shell: bash
+        run: |
+          test -f NOVAIR_GH_SOURCE_HIGHER.zip
+          unzip -o NOVAIR_GH_SOURCE_HIGHER.zip -d .
+          rm -f NOVAIR_GH_SOURCE_HIGHER.zip
+      - name: Commit website
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git commit -m "Actualizar NOVAIR V14 optimizado"
+          git push
