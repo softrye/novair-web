@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths:
       - "NOVAIR_GH_BOOTSTRAP.zip"
-      - ".github/workflows/bootstrap.yml"
+      - ".github/workflows/bootstrap.yml"\n      - "bootstrap.trigger"
   workflow_dispatch:
 
 permissions:
