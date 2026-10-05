@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOVAIR | Óptica virtual</title>
+  <meta name="description" content="NOVAIR, óptica 100% virtual: monturas, lunas y asesoría personalizada con atención en todo el Perú." />
+  <meta name="theme-color" content="#1F304A" />
+  <meta property="og:title" content="NOVAIR | Óptica virtual" />
+  <meta property="og:description" content="Monturas y soluciones visuales con una experiencia digital clara, joven y confiable." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/novair-isotipo.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/novair-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="promo-strip" class="promo-strip">
+    <div class="shell promo-strip-inner">
+      <span>Encuentra tu forma. Elige tu color.</span>
+      <span>Tu receta define el siguiente paso.</span>
+      <span>Asesoría directa por WhatsApp · +51 913 843 772</span>
+    </div>
+  </div>
+
+  <header id="site-header" class="site-header">
+    <div class="header-main shell">
+      <button class="menu-button" id="mobile-menu-toggle" aria-label="Abrir menú">☰</button>
+      <a class="brand" href="#hero" aria-label="NOVAIR Inicio">
+        <img class="brand-logo" src="assets/novair-logo.png" alt="NOVAIR" />
+      </a>
+      <div class="header-search" role="search">
+        <span class="search-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+        <input id="global-search" type="search" placeholder="Buscar por marca, modelo o categoría" aria-label="Buscar productos" />
+      </div>
+      <nav class="header-actions" aria-label="Acciones">
+        <button class="header-action" id="header-favorites" type="button" aria-pressed="false"><span class="header-action-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21.3l7.8-7.8 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><small>Favoritos</small></button>
+        <a class="header-action header-help" href="#how-to-buy"><span class="header-action-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9.8 9a2.4 2.4 0 1 1 3.7 2c-1 .6-1.5 1.1-1.5 2.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="16.8" r="1" fill="currentColor"/></svg></span><small>Ayuda</small></a>
+        <a class="header-action header-whatsapp" href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20ver%20opciones%20de%20monturas" target="_blank" rel="noreferrer"><span class="header-action-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.4-4.2A8.5 8.5 0 1 1 20.5 11.7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.3 7.8c.4-.5.8-.4 1.1-.1l1 1.5c.2.3.2.6 0 .9l-.7.8c.8 1.7 2 2.9 3.7 3.7l.8-.7c.3-.2.6-.2.9 0l1.5 1c.3.3.4.7-.1 1.1-.6.6-1.4.9-2.2.8-3.6-.5-6.6-3.5-7.1-7.1-.1-.8.2-1.6 1.1-1.9Z" fill="currentColor"/></svg></span><small>WhatsApp</small></a>
+      </nav>
+    </div>
+    <nav class="category-nav" id="category-nav" aria-label="Categorías principales">
+      <div class="shell category-nav-inner">
+        <a href="#best-sellers" data-nav-category="all">Monturas ópticas</a>
+        <a href="#best-sellers" data-nav-category="cateye">Cat-eye</a>
+        <a href="#best-sellers" data-nav-category="carey">Carey</a>
+        <a href="#best-sellers" data-nav-category="transparente">Transparentes</a>
+        <a href="#brands">Marcas</a>
+        <a href="#how-to-buy">Cómo comprar</a>
+        <a class="sale-link" href="#best-sellers" data-nav-category="sale">OFERTAS</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero" aria-label="Promociones destacadas">
+      <div class="hero-track" id="hero-track">
+        <article class="hero-slide hero-slide-frames is-active" data-hero-slide aria-hidden="false">
+          <div class="hero-bg hero-bg-video">
+            <video class="hero-video" autoplay muted loop playsinline poster="assets/products/hero-reference.webp">
+              <source src="https://videos.pexels.com/video-files/9771675/9771675-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="hero-shade"></div>
+          <div class="shell hero-inner">
+            <div class="hero-copy">
+              <p class="eyebrow light">OCTUBRE NOVAIR · ENCUENTRA TU FORMA</p>
+              <h1>Tu estilo empieza en la montura.</h1>
+              <p class="hero-lead">Elige una forma que te guste, prueba el color que más vaya contigo y deja que tu receta marque el siguiente paso. Nosotros te acompañamos para completar la combinación.</p>
+              <div class="hero-brand-pills" aria-label="Marcas de monturas">
+                <span>ANDRE NICOL</span><span>COLOR WISSE</span><span>TR90</span><span>RHAPSODY</span><span>ZOTTI</span><span>Z FASHION</span>
+              </div>
+              <div class="hero-ctas">
+                <a class="button button-light" href="#best-sellers">Ver monturas</a>
+                <a class="button button-ghost" href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20que%20me%20ayuden%20a%20elegir%20una%20montura" target="_blank" rel="noreferrer">Quiero asesoría</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero-slide hero-slide-lenses" data-hero-slide aria-hidden="true">
+          <div class="hero-bg hero-bg-video">
+            <video class="hero-video" autoplay muted loop playsinline poster="assets/products/za-668-pastel.webp">
+              <source src="https://videos.pexels.com/video-files/8396460/8396460-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="hero-shade hero-shade-soft"></div>
+          <div class="shell hero-inner">
+            <div class="hero-copy">
+              <p class="eyebrow light">TU RECETA · TU TECNOLOGÍA VISUAL</p>
+              <h1>La precisión está en tus lunas.</h1>
+              <p class="hero-lead">Antirreflejo, blue light, fotocromático o progresivo: elegimos contigo la alternativa que tenga sentido para tu rutina, tu receta y la forma en que usas tus lentes.</p>
+              <div class="hero-brand-pills" aria-label="Estilos destacados">
+                <span>Monofocales</span><span>Blue light</span><span>Fotocromáticos</span><span>Progresivos</span>
+              </div>
+              <div class="hero-ctas">
+                <a class="button button-light" href="#best-sellers">Ver monturas reales</a>
+                <a class="button button-ghost" href="#how-to-buy">Cómo cotizar</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero-slide hero-slide-recipe" data-hero-slide aria-hidden="true">
+          <div class="hero-bg hero-bg-video">
+            <video class="hero-video" autoplay muted loop playsinline poster="assets/products/rhapsody-carey-rosa.webp">
+              <source src="https://videos.pexels.com/video-files/8528863/8528863-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="hero-shade hero-shade-recipe"></div>
+          <div class="shell hero-inner hero-recipe-inner">
+            <div class="hero-copy">
+              <p class="eyebrow light">ASESORÍA 100% VIRTUAL · RESPUESTA RÁPIDA</p>
+              <h1>Tu receta,<br>desde tu celular.</h1>
+              <p class="hero-lead">Envíanos una foto o PDF de tu receta desde tu celular. Te orientamos por WhatsApp para elegir montura, tipo de luna y tratamiento sin ir a una tienda física.</p>
+              <div class="hero-brand-pills" aria-label="Flujo digital">
+                <span>Foto o PDF</span><span>Respuesta por WhatsApp</span><span>Cotización guiada</span>
+              </div>
+              <div class="hero-ctas">
+                <label class="button button-light upload-trigger" for="recipe-upload">Subir receta</label>
+                <a class="button button-ghost" href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20asesor%C3%ADa%20para%20mis%20lentes" target="_blank" rel="noreferrer">Hablar con NOVAIR</a>
+              </div>
+              <p class="recipe-status hero-recipe-status" id="recipe-file-name">Puedes enviar JPG, PNG, WEBP o PDF</p>
+            </div>
+            <div class="phone-visual" aria-hidden="true">
+              <div class="phone-shell">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <img src="assets/novair-isotipo.png" alt="" />
+                  <small>NOVAIR</small>
+                  <strong>Tu receta</strong>
+                  <div class="recipe-paper"><i></i><i></i><i></i><i></i></div>
+                  <span>Lista para enviar</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero-slide hero-slide-color" data-hero-slide aria-hidden="true">
+          <div class="hero-bg hero-bg-video">
+            <video class="hero-video" autoplay muted loop playsinline poster="assets/variants/za-668-pastel/lila/model.webp">
+              <source src="https://videos.pexels.com/video-files/9771675/9771675-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="hero-shade hero-shade-soft"></div>
+          <div class="shell hero-inner">
+            <div class="hero-copy">
+              <p class="eyebrow light">EL MISMO MODELO · OTRA ENERGÍA</p>
+              <h1>Un color cambia<br>todo el look.</h1>
+              <p class="hero-lead">Prueba los colores disponibles desde la vista rápida. La forma se mantiene; la personalidad cambia contigo.</p>
+              <div class="hero-ctas"><a class="button button-light" href="#best-sellers">Probar colores</a><a class="button button-ghost" href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20ayuda%20para%20elegir%20un%20color" target="_blank" rel="noreferrer">Ayúdame a elegir</a></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="hero-slide hero-slide-virtual" data-hero-slide aria-hidden="true">
+          <div class="hero-bg hero-bg-video">
+            <video class="hero-video" autoplay muted loop playsinline poster="assets/variants/zotti-za-554-negro/carey-oscuro/model.webp">
+              <source src="https://videos.pexels.com/video-files/8396460/8396460-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="hero-shade"></div>
+          <div class="shell hero-inner">
+            <div class="hero-copy">
+              <p class="eyebrow light">NOVAIR · TODO DESDE TU CELULAR</p>
+              <h1>Elige. Pregunta.<br>Recíbelo.</h1>
+              <p class="hero-lead">Mira el catálogo, envía tu receta y resuelve tus dudas por WhatsApp. Sin vueltas innecesarias.</p>
+              <div class="hero-ctas"><a class="button button-light" href="#how-to-buy">Ver cómo funciona</a><a class="button button-ghost" href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20empezar%20mi%20cotizaci%C3%B3n" target="_blank" rel="noreferrer">Empezar por WhatsApp</a></div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <button class="hero-arrow hero-prev" id="hero-prev" aria-label="Anterior">‹</button>
+      <button class="hero-arrow hero-next" id="hero-next" aria-label="Siguiente">›</button>
+      <div class="hero-dots" id="hero-dots" aria-label="Seleccionar diapositiva"></div>
+    </section>
+
+    <input id="recipe-upload" class="visually-hidden" type="file" accept="image/jpeg,image/png,image/webp,application/pdf" />
+
+    <section id="brands" class="brand-marquee" aria-label="Marcas disponibles">
+      <div class="shell brand-marquee-head">
+        <span>Marcas para usar todos los días</span>
+        <small>Una selección cercana, combinable y pensada para que encuentres rápido una montura que se sienta tuya.</small>
+      </div>
+      <div class="brand-marquee-window">
+        <div class="brand-marquee-track">
+          <span>ANDRE NICOL</span><span>COLOR WISSE</span><span>TR90</span><span>RHAPSODY</span><span>ZOTTI</span><span>Z FASHION</span>
+          <span>ANDRE NICOL</span><span>COLOR WISSE</span><span>TR90</span><span>RHAPSODY</span><span>ZOTTI</span><span>Z FASHION</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="benefits" aria-label="Beneficios de compra">
+      <div class="shell benefit-grid">
+        <article><span class="benefit-icon">◎</span><div><strong>Asesoría virtual</strong><small>Una persona real te acompaña</small></div></article>
+        <article><span class="benefit-icon">↗</span><div><strong>Envíos nacionales</strong><small>Despachos a todo el Perú</small></div></article>
+        <article><span class="benefit-icon">▱</span><div><strong>Receta digital</strong><small>Foto o PDF desde tu celular</small></div></article>
+        <article><span class="benefit-icon">✓</span><div><strong>Confianza NOVAIR</strong><small>Seguimiento antes y después</small></div></article>
+      </div>
+    </section>
+
+    <section id="category-discovery" class="section category-showcase-section">
+      <div class="shell" id="category-showcase">
+        <div class="showcase-heading">
+          <div>
+            <p class="eyebrow">ENCUENTRA TU PAR PERFECTO</p>
+            <h2>Explora la categoría que más va contigo.</h2>
+            <p>Desde monturas oftálmicas hasta opciones solares, lentes de contacto y selecciones especiales. Cada tarjeta abre una vitrina pensada para mostrar cómo se verá la experiencia final en NOVAIR.</p>
+          </div>
+        </div>
+
+        <div class="category-showcase-grid" aria-label="Explorar categorías NOVAIR">
+          <button class="showcase-card" type="button" data-showcase-category="optical" aria-controls="category-catalog-panel">
+            <img src="assets/showcase/oftalmicos.webp" alt="Modelo usando montura oftálmica" />
+            <span class="showcase-card-footer"><b>Lentes oftálmicos</b><small>Monturas para tu día a día</small></span>
+          </button>
+          <button class="showcase-card" type="button" data-showcase-category="sun" aria-controls="category-catalog-panel">
+            <img src="assets/showcase/sol.webp" alt="Modelo usando lentes de sol" />
+            <span class="showcase-card-footer"><b>Lentes de sol</b><small>Protección con estilo</small></span>
+          </button>
+          <button class="showcase-card" type="button" data-showcase-category="contact" aria-controls="category-catalog-panel">
+            <img src="assets/showcase/contacto.webp" alt="Modelo colocando un lente de contacto" />
+            <span class="showcase-card-footer"><b>Lentes de contacto</b><small>Opciones según tu medida</small></span>
+          </button>
+          <button class="showcase-card" type="button" data-showcase-category="sale" aria-controls="category-catalog-panel">
+            <img src="assets/showcase/sale.webp" alt="Selección de lentes en exhibición" />
+            <span class="showcase-card-footer"><b>Ofertas</b><small>Selecciones especiales</small></span>
+          </button>
+        </div>
+
+        <div id="category-catalog-panel" class="showcase-catalog-panel" hidden aria-live="polite">
+          <div class="showcase-catalog-head">
+            <div><p class="eyebrow" id="showcase-catalog-kicker">SELECCIÓN NOVAIR</p><h3 id="showcase-catalog-title">Lentes oftálmicos</h3><p id="showcase-catalog-description"></p></div>
+            <button id="showcase-catalog-close" class="showcase-close" type="button" aria-label="Cerrar catálogo">×</button>
+          </div>
+          <div class="showcase-catalog-grid" id="showcase-catalog-grid"></div>
+          <div class="showcase-catalog-foot"><span>Selección visual para presentar la experiencia de catálogo NOVAIR. Luego podremos reemplazarla por stock final sin rehacer la sección.</span><a id="showcase-whatsapp" class="button button-primary" href="https://wa.me/51913843772" target="_blank" rel="noreferrer">Quiero ver opciones</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="best-sellers" class="section product-section">
+      <div class="shell">
+        <div class="section-heading split-head">
+          <div><p class="eyebrow">CATÁLOGO NOVAIR</p><h2>Elige primero cómo quieres verte.</h2><p>Explora nuestros modelos, cambia de color en tiempo real y abre la vista rápida para ver cada montura de frente, de perfil y puesta en modelo.</p></div>
+          <span class="product-count"><b id="product-count">0</b> modelos</span>
+        </div>
+        <div class="filter-toolbar">
+          <div class="filter-chips" id="filter-chips">
+            <button class="chip active" data-filter="all">Todos</button>
+            <button class="chip" data-filter="cateye">Cat-eye</button>
+            <button class="chip" data-filter="carey">Carey</button>
+            <button class="chip" data-filter="transparente">Transparentes</button>
+            <button class="chip" data-filter="sale">Ofertas</button>
+          </div>
+          <select id="sort-products" aria-label="Ordenar productos"><option value="featured">Destacados</option><option value="low">Menor precio</option><option value="high">Mayor precio</option></select>
+        </div>
+        <div class="product-grid" id="catalog-grid" aria-live="polite"></div>
+        <div class="catalog-side-note"><article><strong>Tu estilo no termina en la montura.</strong><p>Cuando encuentres la forma que te gusta, vemos contigo qué luna y tratamiento encajan mejor con tu receta y tu rutina.</p></article><article><strong>¿Buscas algo distinto?</strong><p>Escríbenos y te mostramos más opciones según la forma, el color o el estilo que tengas en mente.</p></article></div><div class="center-action"><a class="button button-outline" id="request-more-models" href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20ver%20m%C3%A1s%20modelos%20de%20monturas" target="_blank" rel="noreferrer">Pedir más modelos</a></div>
+      </div>
+    </section>
+
+    <section id="promo-editorial" class="section shell editorial-grid">
+      <article class="editorial-card editorial-dark">
+        <div class="editorial-copy"><p class="eyebrow light">NOVAIR OFFICE</p><h3>Tu mirada también trabaja.</h3><p>Alternativas para quienes pasan horas frente a pantallas y buscan comodidad visual.</p><a href="#best-sellers" class="button button-light" data-nav-category="transparente">Ver selección</a></div>
+        <div class="floating-glasses" aria-hidden="true"></div>
+      </article>
+      <article class="editorial-card editorial-mist">
+        <div class="editorial-copy"><p class="eyebrow">NOVAIR COLOR</p><h3>Mismo modelo.<br>Otra vibra.</h3><p>Cambia el color desde la vista rápida y mira cómo cambia la personalidad de la montura.</p><a href="#best-sellers" class="button button-primary" data-nav-category="all">Probar colores</a></div>
+        <div class="sun-orb" aria-hidden="true"></div>
+      </article>
+    </section>
+
+    <section id="lens-solutions" class="section lens-solutions">
+      <div class="shell lens-layout">
+        <div class="section-heading"><p class="eyebrow">LUNAS Y TECNOLOGÍA</p><h2>Opciones según cómo ves y cómo vives.</h2><p>NOVAIR te orienta para cotizar la alternativa adecuada según tu receta, tu rutina y el tipo de corrección que necesitas.</p></div>
+        <div class="lens-options">
+          <article class="lens-option-card">
+            <b>01</b>
+            <div class="lens-option-icon option-single" aria-hidden="true"></div>
+            <strong>Monofocales</strong>
+            <span>Para una sola distancia visual.</span>
+            <small>Ideales para miopía, hipermetropía, astigmatismo o descanso visual.</small>
+          </article>
+          <article class="lens-option-card">
+            <b>02</b>
+            <div class="lens-option-icon option-multi" aria-hidden="true"></div>
+            <strong>Multifocales</strong>
+            <span>Visión lejana, intermedia y cercana.</span>
+            <small>Alternativas progresivas para quienes necesitan resolver varias distancias en un solo lente.</small>
+          </article>
+          <article class="lens-option-card">
+            <b>03</b>
+            <div class="lens-option-icon option-blue" aria-hidden="true"></div>
+            <strong>Blue light</strong>
+            <span>Opciones para uso intensivo de pantallas.</span>
+            <small>Ayudan a dar confort visual en jornadas de oficina, estudio y uso digital.</small>
+          </article>
+          <article class="lens-option-card">
+            <b>04</b>
+            <div class="lens-option-icon option-photo" aria-hidden="true"></div>
+            <strong>Fotocromáticos</strong>
+            <span>Adaptación a cambios de luz.</span>
+            <small>Se oscurecen en exteriores y vuelven a aclararse en interiores.</small>
+          </article>
+        </div>
+        <div class="labs-block">
+          <div class="labs-heading">
+            <div>
+              <p class="eyebrow">LABORATORIOS ALIADOS</p>
+              <h3>Trabajamos con laboratorios y soluciones reales del mercado óptico peruano.</h3>
+            </div>
+            <p>Según tu receta y tu rutina, te orientamos entre distintas tecnologías de lunas, tratamientos especiales y alternativas de contacto disponibles a través de nuestros laboratorios aliados.</p>
+          </div>
+          <div class="labs-marquee" aria-label="Laboratorios aliados de NOVAIR">
+            <div class="labs-marquee-track">
+              <span>RBC LAB</span><span>TOPSA</span><span>SHARP VISION</span><span>ROSTER</span>
+              <span>RBC LAB</span><span>TOPSA</span><span>SHARP VISION</span><span>ROSTER</span>
+            </div>
+          </div>
+          <div class="lab-showcase">
+            <video class="lab-showcase-video" autoplay muted loop playsinline poster="assets/labs/showcase-poster.svg">
+              <source src="https://videos.pexels.com/video-files/8528863/8528863-uhd_4096_2160_25fps.mp4" type="video/mp4" />
+            </video>
+            <div class="lab-showcase-overlay">
+              <p class="eyebrow light">EXPERIENCIA ÓPTICA CON ACOMPAÑAMIENTO REAL</p>
+              <h4>Tecnología que no se nota. Comodidad que sí.</h4>
+              <p>Comparamos alternativas contigo para que cada tratamiento tenga un motivo: menos reflejos, adaptación a la luz, mayor comodidad frente a pantallas o una solución para varias distancias.</p>
+              <div class="lab-showcase-pills"><span>Antirreflejo</span><span>Fotocromático</span><span>Progresivo</span><span>Lentes de contacto</span></div>
+            </div>
+          </div>
+          <div class="lab-grid advanced">
+            <article class="lab-card lab-rbc">
+              <div class="lab-card-top">
+                <img class="lab-logo" src="assets/labs/rbc.svg" alt="Logo RBC Lab" />
+                <span class="lab-kicker">Laboratorio peruano</span>
+              </div>
+              <div class="lab-card-body">
+                <div class="lab-copy">
+                  <h4>RBC Lab</h4>
+                  <p>Opciones oftálmicas con enfoque en antirreflejo, delgadez, filtros y alternativas para distintas fórmulas.</p>
+                  <div class="lab-tech"><i>HydroBlue</i><i>HydroGreen</i><i>Tesseler</i><i>GX7</i></div>
+                </div>
+                <div class="lab-focus">
+                  <strong>Ideal para</strong>
+                  <ul><li>Uso diario con tratamiento antirreflejo</li><li>Lentes más delgados y resistentes</li><li>Opciones con filtros especiales</li></ul>
+                </div>
+              </div>
+            </article>
+            <article class="lab-card lab-topsa">
+              <div class="lab-card-top">
+                <img class="lab-logo" src="assets/labs/nova-topsa.svg" alt="Logo TOPSA" />
+                <span class="lab-kicker">Soluciones premium</span>
+              </div>
+              <div class="lab-card-body">
+                <div class="lab-copy">
+                  <h4>TOPSA</h4>
+                  <p>Alternativas para progresivos, uso digital, fotocromáticos y tratamientos de alto desempeño según evaluación.</p>
+                  <div class="lab-tech"><i>Varilux</i><i>Eyezen</i><i>Transitions</i><i>Crizal</i></div>
+                </div>
+                <div class="lab-focus">
+                  <strong>Ideal para</strong>
+                  <ul><li>Progresivos y multifocales</li><li>Confort visual frente a pantallas</li><li>Opciones fotocromáticas premium</li></ul>
+                </div>
+              </div>
+            </article>
+            <article class="lab-card lab-sharp">
+              <div class="lab-card-top">
+                <img class="lab-logo" src="assets/labs/sharp-vision.svg" alt="Logo Sharp Vision" />
+                <span class="lab-kicker">Tecnología óptica</span>
+              </div>
+              <div class="lab-card-body">
+                <div class="lab-copy">
+                  <h4>Sharp Vision</h4>
+                  <p>Opciones orientadas a lentes más livianos, fotosensibles, antirreflejo y tecnologías para condiciones específicas.</p>
+                  <div class="lab-tech"><i>Umbrella MR-8</i><i>Zafiro G3</i><i>Neutrafog</i><i>Sharp Colors</i></div>
+                </div>
+                <div class="lab-focus">
+                  <strong>Ideal para</strong>
+                  <ul><li>Lentes más livianos y delgados</li><li>Opciones antiempañantes</li><li>Tecnologías fotosensibles</li></ul>
+                </div>
+              </div>
+            </article>
+            <article class="lab-card lab-roster">
+              <div class="lab-card-top">
+                <img class="lab-logo" src="assets/labs/roster.svg" alt="Logo Roster" />
+                <span class="lab-kicker">Contactología</span>
+              </div>
+              <div class="lab-card-body">
+                <div class="lab-copy">
+                  <h4>Roster</h4>
+                  <p>Alternativas en lentes de contacto blandos, tóricos, RGP y soluciones de mantenimiento para distintos usos.</p>
+                  <div class="lab-tech"><i>Blandos</i><i>Tóricos</i><i>RGP</i><i>Soluciones</i></div>
+                </div>
+                <div class="lab-focus">
+                  <strong>Ideal para</strong>
+                  <ul><li>Contactología y adaptación</li><li>Lentes de contacto blandos o RGP</li><li>Soluciones de mantenimiento</li></ul>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="tech-strip">
+            <article><span>01</span><strong>Antirreflejo</strong><p>Para una visión más limpia y cómoda.</p></article>
+            <article><span>02</span><strong>Fotocromático</strong><p>Se adapta a cambios de luz interior y exterior.</p></article>
+            <article><span>03</span><strong>Progresivo</strong><p>Una sola solución para varias distancias.</p></article>
+            <article><span>04</span><strong>Contacto</strong><p>Blandos, tóricos o RGP según evaluación.</p></article>
+          </div>
+          <div class="labs-note">La disponibilidad final depende de tu receta, la evaluación óptica y la compatibilidad con la montura elegida.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-to-buy" class="section how-to-buy">
+      <div class="shell">
+        <div class="section-heading center"><p class="eyebrow">COMPRA 100% ONLINE</p><h2>De tu receta a tus lentes, sin ir a una tienda.</h2></div>
+        <div class="steps-grid">
+          <article class="step-card"><b>01</b><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5h2l1-2.5h4l1.2 2.5h1.6L14 9h4l1 2.5h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="11.5" width="8" height="5.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="13" y="11.5" width="8" height="5.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></div><h3>Elige tu montura</h3><p>Explora formas, colores y modelos reales de la colección.</p><a class="step-action step-action-primary" href="#best-sellers"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5h2l1-2.5h4l1.2 2.5h1.6L14 9h4l1 2.5h2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="11.5" width="8" height="5.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/><rect x="13" y="11.5" width="8" height="5.5" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Ver catálogo</span></a></article>
+          <article class="step-card"><b>02</b><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5h16v11H9l-5 3v-14Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M8 9h8M8 12.5h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></div><h3>Habla con nosotros</h3><p>Te acompañamos por WhatsApp para resolver dudas y elegir mejor.</p><a class="step-action step-action-whatsapp" href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20asesor%C3%ADa%20para%20elegir%20mis%20lentes" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.4-4.2A8.5 8.5 0 1 1 20.5 11.7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.3 7.8c.4-.5.8-.4 1.1-.1l1 1.5c.2.3.2.6 0 .9l-.7.8c.8 1.7 2 2.9 3.7 3.7l.8-.7c.3-.2.6-.2.9 0l1.5 1c.3.3.4.7-.1 1.1-.6.6-1.4.9-2.2.8-3.6-.5-6.6-3.5-7.1-7.1-.1-.8.2-1.6 1.1-1.9Z" fill="currentColor"/></svg><span>Escribir por WhatsApp</span></a></article>
+          <article class="step-card" id="recipe-panel"><b>03</b><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4 4V20H7V3.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 3.5v4h4M12 16v-6m0 0-2.5 2.5M12 10l2.5 2.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Sube tu receta</h3><p>Adjunta una foto o PDF desde tu celular o computadora.</p><label class="step-action step-action-primary" for="recipe-upload"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4 4V20H7V3.5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 3.5v4h4M12 16v-6m0 0-2.5 2.5M12 10l2.5 2.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Subir mi receta</span></label></article>
+          <article class="step-card"><b>04</b><div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3V6Zm11 4h4l3 3v3h-7v-6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="18" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="1.7"/></svg></div><h3>Recíbelo donde estés</h3><p>Coordinamos tu pedido y te orientamos sobre el envío disponible.</p><a class="step-action step-action-secondary" href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20consultar%20el%20env%C3%ADo%20de%20mi%20pedido" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v10H3V6Zm11 4h4l3 3v3h-7v-6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="7" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="18" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>Consultar envío</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="section shell collections-section">
+      <div class="section-heading"><p class="eyebrow">CURADAS PARA TI</p><h2>Colecciones destacadas</h2></div>
+      <div class="collections-grid">
+        <article class="collection-card ivory"><span>01</span><h3>Transparencias</h3><p>Ligero, limpio y fácil de combinar.</p></article>
+        <article class="collection-card navy"><span>02</span><h3>Essential Black</h3><p>Clásicos gráficos con presencia.</p></article>
+        <article class="collection-card mist"><span>03</span><h3>Soft Color</h3><p>Tonos suaves para salir del negro.</p></article>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="shell newsletter-inner">
+        <div><p class="eyebrow light">NOVAIR CLUB</p><h2>Que lo nuevo te encuentre primero.</h2><p>Si quieres más modelos, colores o lanzamientos, te los mostramos directamente por WhatsApp.</p></div>
+        <a class="button button-light" href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20que%20me%20avisen%20cuando%20lleguen%20modelos%20nuevos" target="_blank" rel="noreferrer">Avísame por WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand"><img src="assets/novair-logo-white.png" alt="NOVAIR" /><p>Óptica virtual con acompañamiento real.</p><small>Elige tu montura. Nosotros te acompañamos con lo demás.</small></div>
+      <div class="footer-column"><h4>Explorar</h4><a href="#best-sellers" data-nav-category="all">Todas las monturas</a><a href="#best-sellers" data-nav-category="cateye">Cat-eye</a><a href="#best-sellers" data-nav-category="carey">Carey</a><a href="#best-sellers" data-nav-category="transparente">Transparentes</a></div>
+      <div class="footer-column"><h4>Marcas</h4><a href="#brands">Monturas</a><a href="#lens-solutions">Lunas</a><a href="#lens-solutions">Laboratorios</a></div>
+      <div class="footer-column"><h4>Ayuda</h4><a href="#how-to-buy">Cómo comprar</a><a href="#recipe-panel">Subir receta</a><a href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20tengo%20una%20consulta%20sobre%20cambios%20o%20garant%C3%ADa" target="_blank" rel="noreferrer">Cambios y garantía</a><a href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20consultar%20por%20env%C3%ADos" target="_blank" rel="noreferrer">Envíos</a></div>
+      <div class="footer-column"><h4>Contacto</h4><a href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20hacer%20una%20consulta" target="_blank" rel="noreferrer">WhatsApp · +51 913 843 772</a><a href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20cotizar%20mis%20lentes" target="_blank" rel="noreferrer">Cotizar ahora</a><small>Atención y cotización 100% virtual</small></div>
+    </div>
+    <div class="shell footer-bottom"><span>© 2026 NOVAIR · Óptica virtual</span><span>Monturas, lunas y asesoría desde donde estés.</span></div>
+  </footer>
+
+  <a id="whatsapp-float" class="whatsapp-float" href="https://wa.me/51913843772?text=Hola%20NOVAIR%2C%20quiero%20cotizar%20mis%20lentes" target="_blank" rel="noreferrer" aria-label="Cotizar por WhatsApp"><span class="wa-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.4-4.2A8.5 8.5 0 1 1 20.5 11.7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.3 7.8c.4-.5.8-.4 1.1-.1l1 1.5c.2.3.2.6 0 .9l-.7.8c.8 1.7 2 2.9 3.7 3.7l.8-.7c.3-.2.6-.2.9 0l1.5 1c.3.3.4.7-.1 1.1-.6.6-1.4.9-2.2.8-3.6-.5-6.6-3.5-7.1-7.1-.1-.8.2-1.6 1.1-1.9Z" fill="currentColor"/></svg></span><span class="wa-copy"><b>Cotiza por WhatsApp</b><small>+51 913 843 772</small></span></a>
+
+  <dialog class="product-modal" id="product-modal"><button class="modal-close" id="modal-close" aria-label="Cerrar">×</button><div id="modal-content"></div></dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
