@@ -22,7 +22,7 @@ input[type=text],input[type=email],input[type=number],input[type=url],select,tex
 input:focus,select:focus,textarea:focus{border:2px solid var(--b);padding:11px 12px}
 textarea{min-height:110px;resize:vertical}.choices{display:grid;gap:9px}.choices.two{grid-template-columns:repeat(2,minmax(0,1fr))}
 .choice{display:flex;gap:9px;align-items:flex-start;color:var(--n1);font-weight:500}.choice input{margin-top:3px;accent-color:var(--b)}
-.filebox{border:1px dashed var(--line);border-radius:10px;padding:14px}.help{font-size:12px;color:var(--muted);margin-top:6px}
+.filebox{border:1px dashed var(--line);border-radius:10px;padding:14px}.help{font-size:12px;color:var(--muted);margin-top:6px}.section-note{margin:-5px 0 16px;color:var(--n2);font-size:13px;font-weight:500}
 .consent{display:flex;gap:10px;align-items:flex-start;font-weight:600;color:var(--n2)}.consent input{margin-top:4px;accent-color:var(--b)}
 .actions{display:grid;gap:10px}.submit{width:100%;border:0;border-radius:12px;padding:15px 18px;background:var(--b);color:var(--w);font-size:17px;font-weight:900;cursor:pointer}.submit:hover{background:var(--n2)}.submit:disabled{background:var(--n2);cursor:wait}
 .status{display:none;padding:13px 15px;border-radius:10px;background:var(--w);border:1px solid var(--line);color:var(--n1)}.status.show{display:block}.status.error{border-left:5px solid var(--b)}
@@ -52,16 +52,31 @@ textarea{min-height:110px;resize:vertical}.choices{display:grid;gap:9px}.choices
 <section class="card">
 <h2><b>01.</b> Datos personales</h2>
 <div class="grid">
-<div><label class="title">Nombres y apellidos <span class="req">*</span></label><input name="nombres_apellidos" type="text" maxlength="140" required></div>
+<div><label class="title">Nombres y apellidos <span class="req">*</span></label><input name="nombres_apellidos" type="text" maxlength="140" autocomplete="name" required></div>
 <div><label class="title">Edad <span class="req">*</span></label><input name="edad" type="number" min="18" max="25" required></div>
-<div><label class="title">Número de WhatsApp <span class="req">*</span></label><input name="whatsapp" type="text" maxlength="30" required></div>
-<div><label class="title">Correo electrónico <span class="req">*</span></label><input name="email" type="email" maxlength="180" required></div>
 <div class="full"><label class="title">Distrito de residencia <span class="req">*</span></label><input name="distrito" type="text" maxlength="100" required></div>
 </div>
 </section>
 
 <section class="card">
-<h2><b>02.</b> Sobre ti</h2>
+<h2><b>02.</b> Datos de contacto</h2>
+<p class="section-note">Estos datos son obligatorios porque Ingema Consultores los utilizará para comunicarse contigo si continúas en el proceso. Revísalos antes de enviar tu postulación.</p>
+<div class="grid">
+<div>
+  <label class="title">Número de WhatsApp <span class="req">*</span></label>
+  <input name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="Ej. 987654321" minlength="7" maxlength="30" pattern="[0-9+() -]{7,30}" required>
+  <div class="help">Ingresa un número donde podamos contactarte por WhatsApp.</div>
+</div>
+<div>
+  <label class="title">Correo electrónico <span class="req">*</span></label>
+  <input name="email" type="email" autocomplete="email" placeholder="nombre@correo.com" maxlength="180" required>
+  <div class="help">Usa un correo que revises con frecuencia.</div>
+</div>
+</div>
+</section>
+
+<section class="card">
+<h2><b>03.</b> Sobre ti</h2>
 <div class="grid">
 <div><label class="title">¿Actualmente estudias alguna carrera o especialidad? <span class="req">*</span></label>
 <select name="estudia_actualmente" required><option value="">Selecciona</option><option>Sí</option><option>No</option><option>Actualmente no, pero deseo comenzar</option></select></div>
@@ -75,7 +90,7 @@ textarea{min-height:110px;resize:vertical}.choices{display:grid;gap:9px}.choices
 </section>
 
 <section class="card">
-<h2><b>03.</b> Inteligencia artificial y aprendizaje</h2>
+<h2><b>04.</b> Inteligencia artificial y aprendizaje</h2>
 <div class="grid">
 <div class="full"><label class="title">¿Qué herramientas de IA has utilizado para aprender o programar?</label><div class="choices two">
 <label class="choice"><input type="checkbox" name="herramientas_ia" value="ChatGPT"><span>ChatGPT</span></label><label class="choice"><input type="checkbox" name="herramientas_ia" value="Claude"><span>Claude</span></label><label class="choice"><input type="checkbox" name="herramientas_ia" value="Claude Code"><span>Claude Code</span></label><label class="choice"><input type="checkbox" name="herramientas_ia" value="Codex"><span>Codex</span></label><label class="choice"><input type="checkbox" name="herramientas_ia" value="GitHub Copilot"><span>GitHub Copilot</span></label><label class="choice"><input type="checkbox" name="herramientas_ia" value="Gemini"><span>Gemini</span></label><label class="choice"><input type="checkbox" name="herramientas_ia" value="Otras"><span>Otras</span></label><label class="choice"><input type="checkbox" name="herramientas_ia" value="Nunca he utilizado IA para programar"><span>Nunca he utilizado IA para programar</span></label>
@@ -87,7 +102,7 @@ textarea{min-height:110px;resize:vertical}.choices{display:grid;gap:9px}.choices
 </section>
 
 <section class="card">
-<h2><b>04.</b> Perfil y forma de trabajo</h2>
+<h2><b>05.</b> Perfil y forma de trabajo</h2>
 <div class="grid">
 <div class="full"><label class="title">¿Qué te interesa aprender? <span class="req">*</span></label><div class="choices two" id="interesesGroup">
 <label class="choice"><input type="checkbox" name="intereses" value="Desarrollo web"><span>Desarrollo web</span></label><label class="choice"><input type="checkbox" name="intereses" value="Aplicaciones móviles"><span>Aplicaciones móviles</span></label><label class="choice"><input type="checkbox" name="intereses" value="Automatización"><span>Automatización</span></label><label class="choice"><input type="checkbox" name="intereses" value="Inteligencia artificial"><span>Inteligencia artificial</span></label><label class="choice"><input type="checkbox" name="intereses" value="Bases de datos"><span>Bases de datos</span></label><label class="choice"><input type="checkbox" name="intereses" value="Desarrollo de software"><span>Desarrollo de software</span></label><label class="choice"><input type="checkbox" name="intereses" value="Diseño de interfaces"><span>Diseño de interfaces</span></label><label class="choice"><input type="checkbox" name="intereses" value="No estoy seguro todavía, quiero aprender"><span>No estoy seguro todavía, quiero aprender</span></label>
@@ -101,7 +116,7 @@ textarea{min-height:110px;resize:vertical}.choices{display:grid;gap:9px}.choices
 </section>
 
 <section class="card">
-<h2><b>05.</b> Herramientas y disponibilidad</h2>
+<h2><b>06.</b> Herramientas y disponibilidad</h2>
 <div class="grid">
 <div><label class="title">¿Cuentas con computadora o laptop? <span class="req">*</span></label>
 <select name="equipo" required><option value="">Selecciona</option><option>Sí</option><option>No</option><option>Tengo acceso a una, pero no es propia</option></select></div>
@@ -115,7 +130,7 @@ textarea{min-height:110px;resize:vertical}.choices{display:grid;gap:9px}.choices
 </section>
 
 <section class="card">
-<h2><b>06.</b> Postulación</h2>
+<h2><b>07.</b> Postulación</h2>
 <div class="grid">
 <div class="full"><label class="title">¿Por qué quieres formar parte del área de programación de Ingema Consultores? <span class="req">*</span></label><textarea name="motivacion" maxlength="2000" required></textarea></div>
 <div class="full"><label class="title">¿Qué te gustaría haber aprendido o conseguido después de unos meses con nosotros? <span class="req">*</span></label><textarea name="objetivo_meses" maxlength="2000" required></textarea></div>
