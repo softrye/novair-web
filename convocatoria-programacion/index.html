@@ -10,7 +10,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--n1);font-family:Arial,Helvetica,sans-serif;line-height:1.45}
 .brandbar{height:8px;background:linear-gradient(90deg,var(--n1) 0 34%,var(--n2) 34% 67%,var(--b) 67%)}
 .wrap{max-width:930px;margin:0 auto;padding:26px 18px 54px}
-.brand{display:flex;align-items:baseline;gap:10px;margin:4px 2px 18px}.brand .name{font-size:31px;font-weight:900;letter-spacing:-1.3px;color:var(--n1)}.brand .name b{color:var(--b)}.brand .sub{font-size:14px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;color:var(--n2)}
+.brand{display:flex;align-items:center;margin:4px 2px 18px}.brand img{display:block;width:min(420px,78vw);height:auto;object-fit:contain;object-position:left center}
 .hero{position:relative;overflow:hidden;background:var(--w);border:1px solid var(--line);border-top:6px solid var(--b);border-radius:18px;padding:30px;box-shadow:0 12px 36px rgba(21,26,48,.08);margin-bottom:18px}
 .hero:after{content:"</>";position:absolute;right:-15px;bottom:-42px;font-weight:900;font-size:150px;color:rgba(6,84,162,.055);transform:rotate(-8deg)}
 .hero h1{position:relative;z-index:1;margin:0;color:var(--n1);font-size:clamp(31px,5.6vw,52px);line-height:1.01;letter-spacing:-1.5px}.hero h1 span{display:block;color:var(--b)}.hero p{position:relative;z-index:1;max-width:760px;font-size:17px;color:var(--n2);margin:15px 0 0}.chips{position:relative;z-index:1;display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.chip{border:1px solid var(--b);color:var(--b);font-weight:800;border-radius:999px;padding:7px 10px;font-size:12px;background:#fff}
@@ -28,7 +28,7 @@ textarea{min-height:110px;resize:vertical}.choices{display:grid;gap:9px}.choices
 .status{display:none;padding:13px 15px;border-radius:10px;background:#fff;border:1px solid var(--line);color:var(--n1)}.status.show{display:block}.status.error{border-left:5px solid var(--b)}
 .footer{text-align:center;color:var(--muted);font-size:12px;margin-top:15px}.hp{position:absolute;left:-9999px;opacity:0}
 .success{background:#fff;border:1px solid var(--line);border-top:6px solid var(--b);border-radius:18px;padding:34px;box-shadow:0 12px 36px rgba(21,26,48,.08)}.success h2{font-size:31px;margin:0 0 10px;color:var(--n1)}.success strong{color:var(--b)}
-@media(max-width:700px){.grid,.choices.two{grid-template-columns:1fr}.hero,.card{padding:20px}.brand .name{font-size:26px}.hero:after{font-size:110px}}
+@media(max-width:700px){.grid,.choices.two{grid-template-columns:1fr}.hero,.card{padding:20px}.brand img{width:min(360px,86vw)}.hero:after{font-size:110px}}
 </style>
 </head>
 <body>
