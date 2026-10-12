@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Postulantes | Ingema Consultores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--n1:#151A30;--n2:#1C2D50;--b:#0654A2;--w:#FFFFFF}
+*{box-sizing:border-box}body{margin:0;font-family:"Rubik",sans-serif;background:var(--w);color:var(--n1)}
+.topline{height:7px;background:linear-gradient(90deg,var(--n1) 0 33.33%,var(--n2) 33.33% 66.66%,var(--b) 66.66%)}
+.shell{max-width:1360px;margin:auto;padding:22px}.header{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:20px}.logo{width:min(310px,55vw)}.logout{border:1px solid var(--n2);background:var(--w);color:var(--n2);border-radius:10px;padding:10px 14px;font-weight:700;cursor:pointer}
+.card{background:var(--w);border:1px solid var(--n2);border-radius:16px}.login{max-width:480px;margin:70px auto;padding:28px}.login h1{margin:0 0 8px;font-size:28px}.login p{color:var(--n2);margin:0 0 22px}
+label{display:block;font-size:13px;font-weight:700;color:var(--n2);margin:13px 0 6px}input,select{width:100%;border:1px solid var(--n2);border-radius:10px;padding:12px 13px;font:inherit;outline:none;background:var(--w);color:var(--n1)}input:focus,select:focus{border:2px solid var(--b);padding:11px 12px}
+.primary{width:100%;margin-top:18px;border:0;background:var(--b);color:var(--w);border-radius:10px;padding:13px;font-weight:800;font:inherit;cursor:pointer}.primary:disabled{background:var(--n2)}.msg{display:none;margin-top:13px;padding:10px 12px;border-radius:9px;background:var(--w);border-left:4px solid var(--b);font-size:13px}.msg.show{display:block}.hidden{display:none!important}
+.hero{padding:22px 24px;margin-bottom:18px;display:flex;align-items:flex-end;justify-content:space-between;gap:18px;border-top:5px solid var(--b)}.hero h1{margin:0;font-size:30px}.hero p{margin:6px 0 0;color:var(--n2)}.hero .user{text-align:right;color:var(--n2);font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:18px}.stat{padding:18px}.stat b{display:block;font-size:28px;color:var(--b)}.stat span{font-size:13px;color:var(--n2)}
+.toolbar{padding:14px;display:grid;grid-template-columns:minmax(260px,1fr) 220px auto auto;gap:10px;margin-bottom:18px}.toolbar button{border:1px solid var(--n2);background:var(--w);color:var(--n2);border-radius:10px;padding:11px 13px;font-weight:700;cursor:pointer}.toolbar .export{background:var(--n2);color:var(--w)}
+.tablewrap{overflow:auto}.tablecard{padding:0}.tablecard table{width:100%;border-collapse:collapse;min-width:1050px}.tablecard th,.tablecard td{padding:13px 14px;border-bottom:1px solid var(--n2);text-align:left;font-size:13px;vertical-align:top}.tablecard th{position:sticky;top:0;background:var(--n1);color:var(--w);font-size:12px}.name{font-weight:800;color:var(--n1)}.pill{display:inline-block;background:var(--w);color:var(--b);border:1px solid var(--b);border-radius:999px;padding:4px 8px;font-size:11px;font-weight:700}
+.actions{display:flex;gap:6px;flex-wrap:wrap}.actions button,.actions a{border:1px solid var(--b);background:var(--w);color:var(--b);padding:7px 9px;border-radius:8px;font-weight:700;font-size:11px;text-decoration:none;cursor:pointer}.empty{padding:30px;text-align:center;color:var(--n2)}
+.overlay{position:fixed;inset:0;background:rgba(21,26,48,.82);display:flex;align-items:center;justify-content:center;padding:20px;z-index:30}.modal{background:var(--w);border:2px solid var(--n2);border-radius:16px;width:min(900px,96vw);max-height:90vh;overflow:auto;padding:22px}.modalhead{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.modalhead h2{margin:0}.close{border:0;background:transparent;font-size:26px;cursor:pointer;color:var(--n1)}
+.details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}.field{padding:12px;border:1px solid var(--n2);border-radius:10px}.field b{display:block;font-size:11px;color:var(--b);text-transform:uppercase;margin-bottom:4px}.field span{white-space:pre-wrap;font-size:13px}.full{grid-column:1/-1}.filebar{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.filebar button{border:0;background:var(--b);color:var(--w);border-radius:9px;padding:10px 13px;font-weight:700;cursor:pointer}
+@media(max-width:850px){.stats{grid-template-columns:repeat(2,1fr)}.toolbar{grid-template-columns:1fr 1fr}.hero{align-items:flex-start;flex-direction:column}.hero .user{text-align:left}.details{grid-template-columns:1fr}.full{grid-column:auto}}
+@media(max-width:520px){.shell{padding:14px}.stats{grid-template-columns:1fr 1fr}.toolbar{grid-template-columns:1fr}.header{align-items:flex-start}.logo{width:240px}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<main class="shell">
+<header class="header">
+<img class="logo" src="https://raw.githubusercontent.com/softrye/Ingema-Consultores/main/images/INGEMA_LOGO_COMPLETO.png" alt="Ingema Consultores">
+<button id="logoutBtn" class="logout hidden">Cerrar sesión</button>
+</header>
+<section id="loginView" class="login card">
+<h1>Panel de postulantes</h1>
+<p>Acceso interno para revisar la convocatoria de Programación Junior.</p>
+<form id="loginForm">
+<label>Correo de InGe+</label><input id="email" type="email" autocomplete="username" required>
+<label>Contraseña</label><input id="password" type="password" autocomplete="current-password" required>
+<button id="loginBtn" class="primary" type="submit">Ingresar</button>
+<div id="loginMsg" class="msg"></div>
+</form>
+</section>
+<section id="appView" class="hidden">
+<div class="hero card"><div><h1>Postulaciones recibidas</h1><p>Programación Junior · actualización automática cada 30 segundos</p></div><div id="userInfo" class="user"></div></div>
+<div class="stats">
+<div class="stat card"><b id="sTotal">0</b><span>Total postulantes</span></div>
+<div class="stat card"><b id="sToday">0</b><span>Recibidos hoy</span></div>
+<div class="stat card"><b id="sProjects">0</b><span>Con proyectos</span></div>
+<div class="stat card"><b id="sGithub">0</b><span>Con GitHub</span></div>
+</div>
+<div class="toolbar card">
+<input id="search" type="text" placeholder="Buscar por nombre, correo, distrito...">
+<select id="levelFilter"><option value="">Todos los niveles</option><option>No sé programar todavía</option><option>Estoy empezando desde cero</option><option>Tengo conocimientos básicos</option><option>He realizado algunos proyectos</option><option>Nivel intermedio</option></select>
+<button id="refreshBtn">Actualizar</button><button id="exportBtn" class="export">Exportar Excel</button>
+</div>
+<div class="tablecard card"><div class="tablewrap">
+<table><thead><tr><th>Fecha</th><th>Postulante</th><th>Edad</th><th>Distrito</th><th>Nivel</th><th>IA</th><th>Disponibilidad</th><th>Archivos / contacto</th></tr></thead><tbody id="tbody"></tbody></table>
+<div id="empty" class="empty hidden">No hay postulaciones para mostrar.</div>
+</div></div>
+</section>
+</main>
+<div id="modalWrap" class="overlay hidden"><div class="modal">
+<div class="modalhead"><div><h2 id="modalName"></h2><div id="modalSub" style="color:var(--n2);font-size:13px;margin-top:4px"></div></div><button id="closeModal" class="close">×</button></div>
+<div id="modalDetails" class="details"></div><div id="modalFiles" class="filebar"></div>
+</div></div>
+<script type="module">
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+const SUPABASE_URL="https://aalmeaqhhlhzwwzsbbxz.supabase.co";
+const SUPABASE_KEY="sb_publishable_-ch81VY9aD-kQGZjWq1N7w_yZ6DzNb1";
+const BUCKET="convocatoria-programacion-2026";
+const supabase=createClient(SUPABASE_URL,SUPABASE_KEY);
+let rows=[];
+const $=id=>document.getElementById(id);
+const esc=v=>String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[m]));
+const fmtDate=v=>new Intl.DateTimeFormat("es-PE",{dateStyle:"short",timeStyle:"short",timeZone:"America/Lima"}).format(new Date(v));
+const join=v=>Array.isArray(v)?v.join(", "):(v||"—");
+function msg(t){$("loginMsg").textContent=t;$("loginMsg").className="msg show"}
+function showLogin(){$("loginView").classList.remove("hidden");$("appView").classList.add("hidden");$("logoutBtn").classList.add("hidden")}
+function showApp(){$("loginView").classList.add("hidden");$("appView").classList.remove("hidden");$("logoutBtn").classList.remove("hidden")}
+async function loadProfile(){
+ const u=(await supabase.auth.getUser()).data.user;if(!u)throw new Error("Sesión no válida");
+ const q=await supabase.from("profiles").select("full_name,email,global_role,status").eq("id",u.id).single();
+ const p=q.data;if(q.error||!p||p.status!=="ACTIVO"||!["GERENCIA","ADMINISTRADOR","ADMINISTRADOR_GENERAL"].includes(p.global_role)){await supabase.auth.signOut();throw new Error("Tu cuenta no tiene permiso para ver postulaciones.");}
+ $("userInfo").innerHTML="<strong>"+esc(p.full_name||p.email)+"</strong><br>"+esc(p.global_role||"");
+}
+async function loadRows(){
+ $("refreshBtn").disabled=true;
+ const q=await supabase.from("convocatoria_programacion_postulaciones").select("*").order("created_at",{ascending:false}).limit(500);
+ $("refreshBtn").disabled=false;if(q.error)throw q.error;rows=q.data||[];renderStats();renderTable();
+}
+function renderStats(){
+ const f=new Intl.DateTimeFormat("en-CA",{timeZone:"America/Lima"}),today=f.format(new Date());
+ $("sTotal").textContent=rows.length;$("sToday").textContent=rows.filter(r=>f.format(new Date(r.created_at))===today).length;
+ $("sProjects").textContent=rows.filter(r=>r.proyecto_estado==="Sí"||r.proyecto_estado==="Estoy trabajando en uno actualmente").length;
+ $("sGithub").textContent=rows.filter(r=>r.github_estado==="Sí"&&r.github_url).length;
+}
+function filtered(){
+ const q=$("search").value.trim().toLowerCase(),level=$("levelFilter").value;
+ return rows.filter(r=>{const b=[r.nombres_apellidos,r.email,r.whatsapp,r.distrito,r.carrera,r.nivel_programacion].join(" ").toLowerCase();return(!q||b.includes(q))&&(!level||r.nivel_programacion===level)});
+}
+function renderTable(){
+ const d=filtered();$("empty").classList.toggle("hidden",d.length!==0);
+ $("tbody").innerHTML=d.map(r=>{
+  const adj=r.adjunto_path?'<button data-file="adjunto" data-id="'+r.id+'">Adjunto</button>':"";
+  const wa=String(r.whatsapp||"").replace(/\D/g,"");
+  return '<tr><td>'+esc(fmtDate(r.created_at))+'</td><td><button data-detail="'+r.id+'" style="border:0;background:none;padding:0;cursor:pointer;text-align:left"><span class="name">'+esc(r.nombres_apellidos)+'</span><br><span style="color:var(--n2)">'+esc(r.email)+'</span></button></td><td>'+esc(r.edad)+'</td><td>'+esc(r.distrito)+'</td><td><span class="pill">'+esc(r.nivel_programacion)+'</span></td><td>'+esc(join(r.herramientas_ia))+'</td><td>'+esc(join(r.disponibilidad))+'</td><td><div class="actions"><button data-file="cv" data-id="'+r.id+'">CV</button>'+adj+'<a href="https://wa.me/51'+wa+'" target="_blank" rel="noopener">WhatsApp</a></div></td></tr>';
+ }).join("");
+}
+async function openFile(id,type){
+ const r=rows.find(x=>x.id===id);if(!r)return;const path=type==="cv"?r.cv_path:r.adjunto_path;if(!path){alert("No hay archivo adjunto.");return}
+ const q=await supabase.storage.from(BUCKET).createSignedUrl(path,300);if(q.error||!q.data?.signedUrl){alert("No se pudo abrir el archivo.");return}window.open(q.data.signedUrl,"_blank","noopener");
+}
+function field(t,v,full){return '<div class="field '+(full?"full":"")+'"><b>'+esc(t)+'</b><span>'+esc(join(v))+'</span></div>'}
+function openDetail(id){
+ const r=rows.find(x=>x.id===id);if(!r)return;$("modalName").textContent=r.nombres_apellidos;$("modalSub").textContent=fmtDate(r.created_at)+" · "+r.email+" · "+r.whatsapp;
+ $("modalDetails").innerHTML=field("Edad",r.edad)+field("Distrito",r.distrito)+field("Estudia actualmente",r.estudia_actualmente)+field("Carrera",r.carrera||"—")+field("Nivel de programación",r.nivel_programacion)+field("Tecnologías",r.tecnologias)+field("Herramientas de IA",r.herramientas_ia)+field("Intereses",r.intereses)+field("¿Qué hace cuando no sabe una tarea?",r.accion_ante_tarea,true)+field("Dispuesto a aprender con IA",r.dispuesto_ia)+field("Proyecto propio",r.proyecto_estado)+field("Descripción del proyecto",r.proyecto_descripcion||"—",true)+field("Investigaría y probaría soluciones",r.investigaria)+field("Equipo",r.equipo)+field("GitHub",r.github_estado)+(r.github_url?field("URL GitHub",r.github_url):"")+field("Disponibilidad",r.disponibilidad,true)+field("Motivación",r.motivacion,true)+field("Objetivo a unos meses",r.objetivo_meses,true);
+ $("modalFiles").innerHTML='<button data-file="cv" data-id="'+r.id+'">Abrir CV</button>'+(r.adjunto_path?'<button data-file="adjunto" data-id="'+r.id+'">Abrir adjunto</button>':"");$("modalWrap").classList.remove("hidden");
+}
+function exportExcel(){
+ const h=["Fecha","Nombres y apellidos","Edad","WhatsApp","Email","Distrito","Estudia","Carrera","Nivel programación","Tecnologías","IA","Acción ante tarea desconocida","Dispuesto IA","Intereses","Proyecto","Descripción proyecto","Investiga","Equipo","GitHub","URL GitHub","Disponibilidad","Motivación","Objetivo meses"];
+ const m=r=>[fmtDate(r.created_at),r.nombres_apellidos,r.edad,r.whatsapp,r.email,r.distrito,r.estudia_actualmente,r.carrera,r.nivel_programacion,join(r.tecnologias),join(r.herramientas_ia),r.accion_ante_tarea,r.dispuesto_ia,join(r.intereses),r.proyecto_estado,r.proyecto_descripcion,r.investigaria,r.equipo,r.github_estado,r.github_url,join(r.disponibilidad),r.motivacion,r.objetivo_meses];
+ const csv=[h,...filtered().map(m)].map(row=>row.map(v=>'"'+String(v??"").replaceAll('"','""')+'"').join(";")).join("\r\n");
+ const blob=new Blob(["\uFEFF"+csv],{type:"text/csv;charset=utf-8;"}),a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="Postulantes_Programacion_Ingema.csv";a.click();URL.revokeObjectURL(a.href);
+}
+$("loginForm").addEventListener("submit",async e=>{e.preventDefault();$("loginBtn").disabled=true;$("loginBtn").textContent="Ingresando…";const q=await supabase.auth.signInWithPassword({email:$("email").value.trim(),password:$("password").value});$("loginBtn").disabled=false;$("loginBtn").textContent="Ingresar";if(q.error){msg("No se pudo iniciar sesión. Revisa correo y contraseña.");return}try{await loadProfile();showApp();await loadRows()}catch(err){msg(err.message||"Acceso no autorizado");showLogin()}});
+$("logoutBtn").addEventListener("click",async()=>{await supabase.auth.signOut();rows=[];showLogin()});$("refreshBtn").addEventListener("click",()=>loadRows().catch(e=>alert(e.message)));$("search").addEventListener("input",renderTable);$("levelFilter").addEventListener("change",renderTable);$("exportBtn").addEventListener("click",exportExcel);
+$("closeModal").addEventListener("click",()=>$("modalWrap").classList.add("hidden"));$("modalWrap").addEventListener("click",e=>{if(e.target===$("modalWrap"))$("modalWrap").classList.add("hidden")});document.addEventListener("click",e=>{const d=e.target.closest("[data-detail]");if(d)openDetail(d.dataset.detail);const f=e.target.closest("[data-file]");if(f)openFile(f.dataset.id,f.dataset.file)});
+setInterval(()=>{if(!$("appView").classList.contains("hidden"))loadRows().catch(()=>{})},30000);
+(async()=>{const s=(await supabase.auth.getSession()).data.session;if(s){try{await loadProfile();showApp();await loadRows()}catch{await supabase.auth.signOut();showLogin()}}else showLogin()})();
+</script>
+</body>
+</html>
